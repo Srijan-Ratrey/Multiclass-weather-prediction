@@ -1,37 +1,61 @@
-# Multiclass-weather-prediction
+# 🌤️ Multiclass Weather Prediction using CNN
 
-Overview of project:
-The Multiclass Weather Prediction System is a machine learning-based application that accurately classifies and predicts weather conditions into multiple classes. This system utilizes historical weather data and advanced algorithms to provide real-time forecasts, empowering users to make informed decisions based on expected weather patterns.
+This project focuses on classifying weather conditions from images into multiple categories using a Convolutional Neural Network (CNN). By leveraging deep learning techniques, the model aims to accurately predict weather types, aiding in applications like weather forecasting and environmental monitoring.
 
-Features:
-1. Accurate Weather Classification: The system employs machine learning and deep learning techniques to classify weather conditions, such as sunny, cloudy, rainy, snowy, etc., with high precision and recall rates.
+---
 
-2. Real-Time Predictions: The system provides near-real-time weather predictions, ensuring minimal delay between data acquisition and prediction output, enabling users to stay updated with the latest weather information.
+## 📂 Dataset
 
-3. Scalable and Adaptable: The system is designed to handle large volumes of weather data from various sources, ensuring scalability and adaptability to changing data patterns and technological advancements.
+The model is trained on the [Multi-class Weather Dataset](https://www.kaggle.com/datasets/saurabhshahane/multi-class-weather-dataset), which comprises images categorized into the following classes:
 
-4. User-Friendly Interface: The system features an intuitive and user-friendly interface, allowing users to easily access and interpret the weather forecasts for their specific needs.
+- Cloudy
+- Rainy
+- Sunrise
+- Shine
 
+---
 
-Usage:
-1. Prepare the input data: Ensure that the input weather data is properly formatted and includes relevant features such as temperature, humidity, wind speed, cloud cover, and precipitation.
+## 🧠 Model Architecture
 
-2. Train the model: Use the provided scripts to preprocess the data, extract features, and train the chosen machine learning or deep learning models.
+The CNN model is built using TensorFlow and Keras, featuring:
 
-3. Generate predictions: Once the model is trained, run the system to generate real-time weather predictions. The system will classify the weather conditions into the appropriate classes based on the input data.
+- Multiple convolutional layers with ReLU activation
+- MaxPooling layers to reduce spatial dimensions
+- Dropout layers to prevent overfitting
+- Fully connected (Dense) layers
+- Output layer with softmax activation for multiclass classification
 
-4. Interpret the results: Use the user-friendly interface to interpret and utilize the weather predictions for decision-making purposes. The interface may include visualizations, statistics, and other relevant information.
+---
 
-Contributing:
-Contributions to the Multiclass Weather Prediction System are welcome! If you would like to contribute, please follow these steps:
-1. Fork the repository.
-2. Create a new branch for your contribution.
-3. Make your changes and commit them with descriptive messages.
-4. Push your changes to your forked repository.
-5. Submit a pull request, describing the changes you have made and their purpose.
+## 🛠️ Installation
 
+1. Clone the repository:
 
-Disclaimer:
-The Multiclass Weather Prediction System provides predictions based on historical weather data and machine learning algorithms. While efforts have been made to ensure accuracy, the system may not be entirely error-free or infallible. Users are advised to use the predictions as supplementary information and consult official weather sources for critical decision-making.
+```bash
+git clone https://github.com/Srijan-Ratrey/Multiclass-weather-prediction.git
+cd Multiclass-weather-prediction
+```
 
-This Project was made by Shresht Mishra, Chirag Jain & Srijan Ratrey
+2. Install the required dependencies:
+
+```bash
+pip install -r requirements.txt
+```
+
+---
+
+## 🚀 Usage
+
+1. Download and extract the dataset into the `data/` directory.
+2. Run the notebook or training script to train the model.
+3. Use the trained model to make predictions on new images.
+
+---
+
+## 📊 Results
+
+The model performs well across all weather classes.
+
+![Model Accuracy](demo.png)
+
+---
