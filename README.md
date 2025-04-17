@@ -56,6 +56,6 @@ pip install -r requirements.txt
 
 The model performs well across all weather classes.
 
-![Model Accuracy](demo.png)
+![Model Accuracy](Accuracy.png)
 
 ---
